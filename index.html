@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VerifiedFix — Roofing & Remodeling</title>
+  <meta name="description" content="Roofing and home remodeling in San Diego County. Fast quotes. Licensed & insured crews.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Verified<span>Fix</span></div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#quote" class="cta">Get Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="gradient"></div>
+    <div class="container hero-inner">
+      <h1>Roofing & Home Remodeling in San Diego County</h1>
+      <p>Fast, fair quotes. Licensed & insured crews. Jobs managed end-to-end so you don’t have to chase contractors.</p>
+      <a href="#quote" class="btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <section id="services" class="container services">
+    <h2>What We Do</h2>
+    <div class="grid">
+      <div class="card"><h3>Roofing</h3><p>Asphalt, tile, flat & repairs. Leak diagnostics and full replacements.</p></div>
+      <div class="card"><h3>Kitchens</h3><p>Refresh to full gut remodels. Cabinets, counters, layout updates.</p></div>
+      <div class="card"><h3>Bathrooms</h3><p>Tub-to-shower conversions, tile, vanities, waterproofing.</p></div>
+      <div class="card"><h3>Windows & Doors</h3><p>Energy-efficient upgrades and weatherproof installs.</p></div>
+      <div class="card"><h3>General Remodeling</h3><p>Flooring, paint, framing, and additions.</p></div>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="container">
+      <h2>Why Homeowners Choose Us</h2>
+      <ul class="checks">
+        <li>Local, vetted crews — work is permitted & to code</li>
+        <li>Clear timelines and communication</li>
+        <li>Price-match on comparable written bids</li>
+        <li>Financing options available on approved credit</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="quote" class="container quote">
+    <h2>Get Your Free Quote</h2>
+    <p class="muted">No spam. We’ll text or call to confirm details.</p>
+
+    <form action="https://formsubmit.co/chrystian@verifiedfix.com" method="POST" class="lead-form" novalidate>
+      <input type="hidden" name="_subject" value="New Lead — VerifiedFix">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="thank-you.html">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-grid">
+        <label>Full Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>ZIP Code
+          <input type="text" name="zip" required>
+        </label>
+        <label>Project Type
+          <select name="project_type" required>
+            <option value="">Select…</option>
+            <option>Roof replacement</option>
+            <option>Roof repair</option>
+            <option>Kitchen remodel</option>
+            <option>Bathroom remodel</option>
+            <option>Windows/Doors</option>
+            <option>General remodeling</option>
+          </select>
+        </label>
+        <label>Budget
+          <select name="budget">
+            <option value="">Select…</option>
+            <option>Under $5k</option>
+            <option>$5k–$15k</option>
+            <option>$15k–$40k</option>
+            <option>$40k–$80k</option>
+            <option>$80k+</option>
+          </select>
+        </label>
+        <label>Timeline
+          <select name="timeline">
+            <option value="">Select…</option>
+            <option>ASAP</option>
+            <option>2–4 weeks</option>
+            <option>1–3 months</option>
+            <option>3+ months</option>
+          </select>
+        </label>
+        <label class="span-2">Describe Your Project
+          <textarea name="message" rows="4" placeholder="Tell us what you need…"></textarea>
+        </label>
+        <label class="checkbox span-2">
+          <input type="checkbox" name="owner" value="Yes"> I own this property
+        </label>
+      </div>
+
+      <button type="submit" class="btn">Get My Quote</button>
+      <p class="tiny">By submitting, you agree to be contacted about your project. Standard msg/data rates apply.</p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> VerifiedFix. All rights reserved.</div>
+      <div class="muted">San Diego County, CA • License & insurance available upon request</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
